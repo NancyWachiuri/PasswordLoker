@@ -17,3 +17,9 @@ def main():
     print("\n")
 
 
+    while True:
+        print("Use these short codes : su - create a new password locker account, lg - login to password")
+
+        short_code = input().lower()
+
+        
