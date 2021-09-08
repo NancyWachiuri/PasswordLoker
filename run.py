@@ -22,4 +22,24 @@ def main():
 
         short_code = input().lower()
 
-        
+        if short_code == 'su':
+            print ("Input your username ....")
+            user_name = input()
+
+            print("Input your email address...")
+            email= input()
+
+            print("Phone number ...")
+            p_number = input()
+
+            print("Do you want to the app to generate a password for you?")
+            print("y - yes, n - no ")
+
+            short_code_gen = input().lower()
+
+            if(short_code_gen =="y"):
+                password = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
+
+            else:
+                print("Input the password...")
+                password = input()
