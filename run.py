@@ -43,3 +43,20 @@ def main():
             else:
                 print("Input the password...")
                 password = input()
+
+            user_data = signup(user_name, password, email, p_number)
+            print('\n')
+            print(user_data.username +"have successfully created and abbount wit the password" + user_data)
+
+        elif short_code == 'lg':
+            print('\n')
+            print("Welcome to the login page")
+            print('\n')
+
+            print ("Input your username....")
+            login_user_name = input()
+
+            print ("Input your password...")
+            login_password = input()
+
+            
