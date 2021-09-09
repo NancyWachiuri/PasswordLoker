@@ -18,7 +18,7 @@ def main():
 
 
     while True:
-        print("Use these short codes : su - create a new password locker account, lg - login to password")
+        print("Use these short codes : su - create a new password locker account, lg - login to password locker account, ex - exit the contact list")
 
         short_code = input().lower()
 
@@ -36,8 +36,8 @@ def main():
             print("y - yes, n - no ")
 
             short_code_gen = input().lower()
-
-            if(short_code_gen =="y"):
+            
+            if(short_code_gen == "y"):
                 password = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
 
             else:
@@ -46,7 +46,7 @@ def main():
 
             user_data = signup(user_name, password, email, p_number)
             print('\n')
-            print(user_data.username +"have successfully created and abbount wit the password" + user_data)
+            print(user_data.username +" have successfully created and account with the password "+ user_data.password)
 
         elif short_code == 'lg':
             print('\n')
