@@ -4,7 +4,7 @@ import random
 import string
 
 user_data =None
-Credentials_data = None
+credentials_data = None
 def signup(user_name, password, email, p_number):
     user_data = User(user_name, password, email, p_number)
     return user_data
@@ -59,4 +59,45 @@ def main():
             print ("Input your password...")
             login_password = input()
 
-            
+            if (login_user_name == user_data.username and login_password == user_data.password):
+                print ("You are successfully logged in")
+            else:
+                print("Wrong credentials")
+            while True:
+             print("Use these short codes : cc - create credentials, dc - Display credentials, ex - exit")
+             short_code2 = input().lower()
+             if short_code2 == 'cc':
+                 print("Input the website name ....")
+                 website_name = input()
+
+                 print("Input the website name email address ....")
+                 website_email = input()
+
+                 print("Do you want the app to generate a password for you?")
+                 print("y - yes, n - no")
+
+                 short_code_gen = input().lower()
+
+                 if (short_code_gen == "y"):
+                     password = input()
+
+                 else:
+                     print("Input the password...")
+                     password= input()
+
+                     credentials_data = Credentials(website_name, website_email, password)
+                     credentials_data.add_credentials()
+
+             elif short_code2 == 'dc':
+                for item in credentials_data.credentials:
+                    print("Here is the website" + item.website_name)
+             else:
+                 print("Thank you for visiting our website")
+
+        else:
+            break
+
+
+
+
+
