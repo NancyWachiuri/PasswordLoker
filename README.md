@@ -11,7 +11,7 @@ On Average, a person has at least 7 different accounts he or she has signed into
 This application that will help us manage our passwords and even generate new passwords for us.
 
 ## Setup/Installation Requirements
-git clone https://github.com/NancyWachiuri/studio.git
+git clone https://github.com/NancyWachiuri/PasswordLocker.git
 extract the file
 cd to the Password_Locker
 Open the index.html on your favorite browser``
