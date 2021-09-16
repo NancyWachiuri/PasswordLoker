@@ -23,7 +23,7 @@ def main():
         short_code = input().lower()
 
         if short_code == 'su':
-            print ("Input your username ....")
+            print ("Input your username ...")
             user_name = input()
 
             print("Input your email address...")
