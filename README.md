@@ -17,10 +17,11 @@ cd to the Password_Locker
 Open the index.html on your favorite browser``
 
 ## Technologies Used
-
   * Python Flask
   * Markdown
+
 ## Support and contact details
 nancywachiuri@gmail.com
+
 ### License
 MIT License
