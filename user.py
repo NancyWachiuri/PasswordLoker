@@ -1,4 +1,5 @@
 class User:
+    
     user = [] 
     def __init__(self, username,password,email,phone_number):
         self.username = username
